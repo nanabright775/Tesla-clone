@@ -1,0 +1,2 @@
+1. To include formatter use the the .prettierrc configure file,
+2. To be able navigate and move from page to page in react you need to install the react router dom 

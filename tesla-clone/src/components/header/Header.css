@@ -1,0 +1,30 @@
+nav .headerList {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 7px 40px;
+
+}
+
+nav .headerList li {
+  padding: 3px 7px;
+  cursor: pointer;
+  transition: all 0.7s;
+  border-radius: 3px;
+}
+
+nav .headerList li:hover {
+    background-color: var(--hover-background);
+}
+
+nav .headerList li:first-child {
+    font-size: 26px;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 200;
+}

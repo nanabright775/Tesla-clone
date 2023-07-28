@@ -1,0 +1,6 @@
+.cart-container{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}

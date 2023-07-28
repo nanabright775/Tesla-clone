@@ -1,0 +1,13 @@
+{
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "noExtraEmptyLines": true,
+    "semi": true,
+    "printWidth": 80,
+    "noExtraBlankLines": true,
+    "rules":{
+        "no-multiple-empty-lines": ["error", {"max": 1, "maxEOF": 0}]
+    }
+  }
+  
