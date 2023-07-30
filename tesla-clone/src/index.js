@@ -10,6 +10,10 @@ import App from './App';
 import ShopPage from './pages/ShopPage';
 import { RecoilRoot } from 'recoil';
 import CartPage from './pages/CartPage';
+import {Toaster} from 'react-hot-toast'
+
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -65,6 +69,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Toaster/>
     <RecoilRoot>
       <RouterProvider router={router} />
     </RecoilRoot>

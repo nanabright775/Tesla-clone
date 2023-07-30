@@ -43,11 +43,9 @@ export default function ModelSPage() {
           image2={modelss}
           text1="Glass Roof
               The expansive Glass Roof in Model 3 provides passengers 
-              with a brighter, more spacious experience—and a
-              seamless view of the sky.s"
+              with a brighter"
           text2="All-Weather Comfort
-              Enhance comfort and convenience with heated seats,
-              side mirrors and steering wheel."  
+              Enhance comfort and convenience "  
         />
       </section>
     </div>

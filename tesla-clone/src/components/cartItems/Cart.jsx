@@ -2,27 +2,29 @@ import React from 'react';
 import { useRecoilState } from 'recoil';
 import { cartState } from '../../global-state/CartItems';
 import './Cart.css';
+import toast from 'react-hot-toast';
 
 function Cart() {
   const [cartItems, setCartItems] = useRecoilState(cartState);
   const handleBuyEverything = () => {
+    toast.success('succesfully, All items purchase ')
     setCartItems([]);
   };
 
   function removeFromCart(id) {
-    setCartItems((items) => items.filter((cartItems) => cartItems.id !== id));
+    setCartItems((item) => item.filter((cartItems) => cartItems.id !== id));
   }
 
   const CartList = (
     <>
       <h2>Cart</h2>
       <ul>
-        {cartItems.map((items) => (
-          <li key={items.id}>
+        {cartItems.map((item) => (
+          <li key={item.id}>
             <div>
-              <div> {items.title}</div>
-              <div>{items.price}</div>
-              <button onClick={() => removeFromCart(items.id)}>
+              <div> {item.title}</div>
+              <div>{item.price}</div>
+              <button onClick={() => removeFromCart(item.id)}>
                 Remove from Cart
               </button>
             </div>
@@ -37,7 +39,7 @@ function Cart() {
 
   return (
     <div className="cart-container">
-      <div>
+      <div className='cart-wrapper'>
         
         {cartItems.length > 0 ? CartList : NoItemInCart}
       </div>

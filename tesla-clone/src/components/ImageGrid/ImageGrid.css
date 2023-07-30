@@ -1,28 +1,10 @@
 .grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid; */
     grid-gap: 20px;
     background-color: black;
     align-items: center;
     height: 100%;
     width: 100%;
-}
-.imgae-grid-img{
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin: 0px;
-    padding: 70;
-}
-.grid-item{
-    text-align: center;
-}
-.grid-item-text{
-    padding: 100px;
-}
-
-.text{
-    margin-top: 10px;
+    padding-left: 300px;
+    padding-top: 70px;
 }
